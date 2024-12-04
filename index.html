@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animation</title>
+    <style>
+      .box{
+        width: 200px;
+        height:200px;
+        background: goldenrod;
+        margin:100px auto;
+        animation-name:abc;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        
+
+      }
+      @keyframes abc{
+        0%{
+          transform: rotateZ(0deg);
+          
+        }
+      100%  {
+        transform: rotateZ(360deg);}
+      }
+      .box1{
+        width: 200px;
+        height:200px;
+        background: green;
+        margin: 100px auto;
+        animation-name:abc1;
+        animation-duration:10s;
+        animation-timing-function:ease-out ;
+        animation-iteration-count: 1 ;
+        
+
+      }
+      @keyframes abc1{
+        0%{
+          transform: rotateZ(0deg);
+          
+        }
+      100%  {
+        transform: rotateZ(360deg);}
+      }
+      .box3{
+        width: 200px;
+        height:200px;
+        background: rgb(205, 19, 158);
+        /* margin:100px auto; */
+        animation-name:abc2;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        
+
+      }
+      @keyframes abc2{
+        0%{
+          transform: translateX(0px);
+          
+        }
+      100%  {
+        transform: translateX(400px);}
+      }
+      .box4{
+        width: 200px;
+        height:200px;
+        background: blue;
+        /* margin:100px auto; */
+        animation-name:abc4;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+
+      }
+      @keyframes abc4{
+        0%{
+          transform: translateX(0px);
+          
+        }
+        25%{
+          background: maroon;
+          border-radius: 200px;
+        }
+        50%{
+          background: aqua;
+        }
+      100%  {
+        transform: translateX(1300px)}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      
+
+    </div>
+    <div class="box1"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    
+    
+  </body>
+  </html>
